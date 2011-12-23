@@ -6,9 +6,14 @@
 		<meta charset="encoding">
 		<!-- Viewport Setting -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 		<title>Javascript Intro and jQuery</title>
+		
 		<!-- jQuery Mobile -->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+		
 		<!-- jQuery-1.7.1 -->
 		<script type="text/javascript" src="jquery-1.7.1.js"></script>
 	</head>	
@@ -24,11 +29,22 @@
 			<div data-role="content">	
 				<p> Y acá el párrafo que venís a leer </p>		
 			</div><!-- /content -->
-
+			
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li><a href="noticias.html"/>Noticias</a></li>
+				<li><a href="mascotas.html"/>Adopte una Mascota</a></li>
+				<li><a href="torneo"/>Torneo de Ajedrez</a></li>
+			</ul>
+			
+			<div data-role="footer">
+				<h4>Encabezado</h4>
+			</div><!-- /footer -->
 		</div><!-- /page -->
+		
 		<form>
 			<div>
 				<!-- Botón 2 / From exercise -->
+				<!-- <a href="index.html" data-role="button"data-icon="data">My Life as a Button :3</a> -->
 				<input type="button" id="exerButton" value="My Life as a Button :3">
 				<!-- <input type="button" id="exerButton" onclick="alert('AVISO')" value="BOTÓN 2"> -->
 			</div>
