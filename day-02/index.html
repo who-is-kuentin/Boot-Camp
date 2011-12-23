@@ -2,62 +2,74 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <!-- Exercises for Day Two and Three - HTML5 Boot Camp -->
 <html>
+
 	<head>
+	
 		<meta charset="encoding">
 		<!-- Viewport Setting -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
+		<!-- Title -->
 		<title>Javascript Intro and jQuery</title>
-		
 		<!-- jQuery Mobile -->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-		
 		<!-- jQuery-1.7.1 -->
 		<script type="text/javascript" src="jquery-1.7.1.js"></script>
-	</head>	
+		
+	</head>
+	
 	<body>
-<!--		<!-- Botón 1 / Unusable -->
-<!--		<button type="button">BOTÓN 1</button> -->
-		<div data-role="page">
+		<!-- <!-- Botón 1 / Unusable -->
+		<!-- <button type="button">BOTÓN 1</button> -->
+		<div data-role="page" id="main">
 
 			<div data-role="header">
 				<h2> ¿Qué sería de esta página sin un buen título? </h2>
 			</div><!-- /header -->
 
 			<div data-role="content">	
-				<p> Y acá el párrafo que venís a leer </p>		
+				<p> Estas son las próximas bandas que estarán tocando en el patio de mi casa </p>		
 			</div><!-- /content -->
 			
-			<ul data-role="listview" data-inset="true" data-filter="true">
-				<li><a href="noticias.html"/>Noticias</a></li>
-				<li><a href="mascotas.html"/>Adopte una Mascota</a></li>
-				<li><a href="torneo"/>Torneo de Ajedrez</a></li>
+			<!-- Listview with Transitions-->
+			<ul data-role="listview" data-inset="true" data-filter="true" data-transition="slide">
+				<li><a href="banda1.html"/>02-Feb * El Gran Hombre del Planeta</a></li>
+				<li><a href="banda2.html"/>09-Feb * El Mato un Policia Motorizado</a></li>
+				<li><a href="banda3.html"/>16-Feb * Loquero 06/02</a></li>
 			</ul>
 			
-			<div data-role="footer">
-				<h4>Encabezado</h4>
-			</div><!-- /footer -->
-		</div><!-- /page -->
-		
-		<form>
+			<!-- Textarea -->
 			<div>
-				<!-- Botón 2 / From exercise -->
+				<input type="textarea" id="alias" cols="50" rows="10" value=""/>
+			</div>
+			
+			<!-- Button -->
+			<div>
 				<!-- <a href="index.html" data-role="button"data-icon="data">My Life as a Button :3</a> -->
 				<input type="button" id="exerButton" value="My Life as a Button :3">
 				<!-- <input type="button" id="exerButton" onclick="alert('AVISO')" value="BOTÓN 2"> -->
 			</div>
-			<div>
-				<input type="textarea" id="alias" cols="50" rows="10" value=""/>
-			</div>
+			
+			<div data-role="footer" class="ui-bar">
+				<div data-role="controlgroup" data-type="horizontal">
+				<a href="index.html" data-role="button">Hoy</a>
+				<a href="index.html" data-role="button">Mañana</a>
+				<a href="index.html" data-role="button">Semana</a>
+				</div>
+				<h2>Footer</h2>
+			</div><!-- /footer -->
+		</div><!-- /page -->
+		
+		<form>
 			<div id='response'></div>
 		</form>
-		<!--script src="cursorInaBox.js"></script-->
+		<script type="text/javascript" src="myScript.js"></script>
+	</body>
+</html>
+
+<!--script src="cursorInaBox.js"></script-->
 		<!--div >
 			<!--textarea name="comments" id="alias" cols="50" rows="10" class="html-text-box">Textbox</textarea-->
 			<!--textarea type="textarea" id="alias" value="aa"></textarea-->
 		<!--/div-->
-		<script type="text/javascript" src="myScript.js"></script>
-	</body>
-</html>
