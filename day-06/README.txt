@@ -18,3 +18,5 @@ Practice:
 8 . Make Movie's Director speak random quotes inside jQuery Mobile dialogs
 
 KEY POINT: 2,3
+
+DONE UNTIL EXERCISE 5.
