@@ -10,9 +10,9 @@
 	<body>
 		
 		<script type="text/javascript">
-		
+			/*	kp6: template modified for iterations	*/
 			var template = "<h1>{{name}}</h1>"+"{{#cvitae}}"+"<ul><li><font color='red'>{{info}}</font></li></ul>"+"{{/cvitae}}";
-			
+			/*	kp4: template parsed with data	*/
 			var html = Mustache.to_html(template,jsonData);
 			
 			document.write(html);
