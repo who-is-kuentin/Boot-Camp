@@ -1,9 +1,9 @@
 var jsonData = {
 	"name": "Philip J. Fry",
 	"cvitae": [
-		{"info": "98.000 Million Years Old"},
-		{"info": ["Delivery Boy at Panucci Pizza","Delivery Boy at Planet Express"]},
-		{"info": "Married w/ Turanga Leela"},
-		{"info": "Professor Farnsworth"},
+		{"what": "Age", "info": "98.000 Million Years Old"},
+		{"what": "Previous Experience", "info": ["Delivery Boy at Panucci Pizza","Delivery Boy at Planet Express"]},
+		{"what": "Marital Status", "info": "Married w/ Turanga Leela"},
+		{"what": "Reference", "info": "Professor Farnsworth"},
 	]
 };
