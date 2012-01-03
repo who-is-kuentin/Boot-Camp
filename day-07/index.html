@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>TEMPLATE ENGINES</title>
+		<script src="js/mustache.js"></script>
+		<script src="js/json.js"></script>
+		<script src="js/data.js" type="text/javascript"></script>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+		
+			var template = "<h1>{{name}}</h1>"+"{{#cvitae}}"+"<ul><li><font color='red'>{{info}}</font></li></ul>"+"{{/cvitae}}";
+			
+			var html = Mustache.to_html(template,jsonData);
+			
+			document.write(html);
+		
+		</script>
+<!--		<script id="profile_mustache_template" type="text/javascript">
+<!--			var proProfile, template, html;
+<!--			<!-- ex2: write a template for professional profile -->
+<!--			proProfile = {
+<!--				name: "Philip J Fry",
+<!--				age: "98.000 Million Years",
+<!--				working at: "Delivery Boy at Planet Express",
+<!--				prevExp: ["Delivery Boy at Panucci Pizza"],
+<!--				studies: ["None"],
+<!--				ref: ["Professor Farnsworth"],
+<!--			};
+<!--		
+<!--			template = "<h1>{{name}}</h1> <ul> <li>Age: {{age}}</li> <li>Experience: {{experience}}</li> <li>Previous Experience: {{prevExp}}</li> <li>Studies: {{studies}}</li> <li>Reference: {{ref}}</li> </ul>"
+<!--			
+<!--			html = Mustache.to_html(template,proProfile);
+<!--			
+<!--			document.write(html);
+<!--			
+<!--		</script>-->
+	</body>
+</html>
