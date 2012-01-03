@@ -10,3 +10,5 @@ Practice:
 7 . Repeat with the next template engine from the reading list
 
 KEY POINTS: 4,6
+
+DONE UNTIL EXERCISE 6.
