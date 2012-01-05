@@ -1,0 +1,4 @@
+/*In order to use these new tags currently you will need to display them block in your CSS, because the browsers don’t really know how to handle them */
+header, nav, article, section, footer, figure, aside {
+    display: block;
+}
