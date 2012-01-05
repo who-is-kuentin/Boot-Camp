@@ -1,0 +1,34 @@
+/*In order to use these new tags currently you will need to display them block in your CSS, because the browsers don’t really know how to handle them */
+header, nav, article, section, footer, figure, aside {
+    display: block;
+}
+@media screen and (min-width: 1200px) {
+	.memberssp3 {
+		/* Mozilla Settings */
+		-moz-column-count: 4;
+		-moz-column-gap: 20px;
+		/* Safari/Chrome Settings */
+		-webkit-column-count: 4;
+		-webkit-column-gap: 20px;
+		/**/
+		column-count: 4;
+		column-gap: 20px;
+	}
+
+	.discographysp3 {
+		/* Mozilla Settings */
+		-moz-column-count: 3;
+		-moz-column-gap: 5px;
+		/* Safari/Chrome Settings */
+		-webkit-column-count: 3;
+		-webkit-column-gap: 5px;
+		/**/
+		column-count: 3;
+		column-gap: 5px;
+	}
+
+	.sm3pic {
+		height: 100%;
+		width: 100%;
+	}
+}
