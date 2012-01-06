@@ -2,6 +2,7 @@
 header, nav, article, section, footer, figure, aside {
     display: block;
 }
+/* ex2 */
 @media screen and (min-width: 1200px) {
 	.memberssp3 {
 		/* Mozilla Settings */
@@ -32,7 +33,8 @@ header, nav, article, section, footer, figure, aside {
 		width: 100%;
 	}
 }
-@media screen and (max-width: 800px) and (min-width: 1200px) {
+/* ex3 */
+@media screen and (min-width: 800px) and (max-width: 1200px) {
 	.memberssp3 {
 		/* Mozilla Settings */
 		-moz-column-count: 3;
