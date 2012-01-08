@@ -1,0 +1,128 @@
+/* ex 5.a: add styling inside default.css to make contents more readable and usable */
+html {
+	background-color: #FFBBA5 ;
+	/*background-image:url('bgimg/it2.jpg'); */
+	/*background-repeat:no-repeat; */
+	/*background-attachment:fixed; */
+	/*background-position:top; */
+}
+body {
+	background-color: #CCBBDD;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	border: black;
+	/* Text */
+	text-indent: 25px;
+	text-align:justify;
+	letter-spacing:3px;
+	color: #DDCCBB;
+	font-family: arial, verdana, sans-serif;
+}
+#logo{
+	background-color: rgb(125,175,255);
+	text-align: center;
+	float: center;
+	margin: auto;
+	width: auto;
+}
+/* ex 5.b: make sure the menu items change when the mouse is over them */
+#menu a:link { 
+	color: yellow; 
+}
+#menu a:visited {
+	color:yellow;
+}
+#menu a:hover {
+	color:green;
+}
+/* ex 5.c: add lines between menu items; they must have the same width in all cases; a
+   line should appear at the left of "Home" and the right of "Day 3" */
+#menu a {
+	border-bottom: 3px double red;
+}
+#menu li:first-of-type a {
+	border-left: 3px double red;
+}
+#menu li:last-of-type a {
+	border-right: 3px double red;
+}
+/* ex 5.d: without using media queries, show both articles on the same row if enough
+   space and break them into different rows if they reach a minimum widht */
+/* ??? */
+/* ??? */
+/* ??? */
+/* ??? */
+/* ex 5.e: highlight in different background colors all spans with classes: hiOne,
+   hiTwo, hiThree */
+span.hiOne{
+	background-color: yellow;
+}
+span.hiTwo {
+	background-color: violet;
+}
+span.hiThree {
+	background-color: green;
+}
+/* ex 5.f: now highlight with another background color all spans which class name starts
+   with: hi */
+span[class^="hi"] {
+	background-color: rgb(250,10,082);
+}
+/* ex 5.g: repeat previous step for class names ending with: One */
+span[class$="One"] {
+	background-color: rgb(255,255,0);
+}
+/* ex 5.h: remove all styles applied to spans with one new style, without deleting your
+   previous styles from the stylesheet */
+span[class] {
+	background-color: #00DEF0;
+	font:italic bold 15px Georgia, serif;
+}
+/* ex 5.i: apply different colors to first and second links in article's header */
+.mainContent article a:first-of-type {
+	background-color: green;
+}
+.mainContent article a:nth-of-type(2) {
+	background-color: blue;
+}
+/* ex 5.j: remove empty p tags applying a new style */
+p:empty {
+	background: #ff0;
+	/*display:none;*/
+}
+/* ex 5.k: apply cross browser shadows to the articles */
+.mainContent article:first-of-type {
+	/* Firefox */
+	-moz-box-shadow: 10px 10px 10px #000;
+	/* Safari, Chrome */
+	-webkit-box-shadow: 10px 10px 10px #000; 
+	/* CSS3 */
+	box-shadow: 10px 10px 10px #000;
+	/* IE (tested in IE 8 -not working) */
+	behavior: url(ie-css3.htc);
+}
+.mainContent article:nth-of-type(2) {
+	/* Firefox */
+	-moz-box-shadow: 10px 10px 10px #000;
+	/* Safari, Chrome */
+	-webkit-box-shadow: 10px 10px 10px #000; 
+	/* CSS3 */
+	box-shadow: 10px 10px 10px #000;
+	/* IE (tested in IE 8 -not working) */
+	behavior: url(ie-css3.htc);
+}
+/* ex 5.l: appply cross browser rotation to aside elements */
+aside {
+	/* Firefox */
+	-moz-transform:rotate(180deg);
+	/* Safari and Chrome */
+	-webkit-transform:rotate(180deg);
+	/* Opera */
+	-o-transform:rotate(180deg);
+	/* IE 9 */
+	-ms-transform:rotate(180deg);
+}
